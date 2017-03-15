@@ -1,0 +1,37 @@
+// Mixins
+@mixin marginX($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+@mixin marginY($margin) {
+    margin-bottom: $margin;
+    margin-top: $margin;
+}
+
+@mixin paddingX($padding) {
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+@mixin paddingY($padding) {
+    padding-bottom: $padding;
+    padding-top: $padding;
+}
+
+@mixin circle-div($radius) {
+	border-radius: 100%;
+	height: $radius;
+	width: $radius;
+}
+
+@mixin background-defaults {
+    background-color: transparent;
+    background-image: none;
+    background-position: 0% 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+}

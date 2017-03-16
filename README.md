@@ -6,5 +6,6 @@ Current Webpack processes:
 - Generate unique JS files with a hash for cache prevention
 - Generate index.html with script tags each time the JS hash changes
 - HTML and JS for production deposited into a 'dist' folder
+- Sass compilation to CSS and auto-insertion of script tags
 
 Just run ```npm install``` to get the latest dependencies and ```npm run build``` to get going.

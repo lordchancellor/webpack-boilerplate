@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -16,12 +17,19 @@ module.exports = {
 				test: /\.js$/,
 				use: 'babel-loader',
 				exclude: '/node_modules/'
+			},
+			{
+				test: /\.(scss|sass)$/,
+				use: ExtractTextPlugin.extract({
+					use: ['css-loader', 'sass-loader']	
+				})
 			}
 		]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, 'src/index.html')
-		})
+			template: ('src/index.html')
+		}),
+		new ExtractTextPlugin('style.css')
 	]
 }

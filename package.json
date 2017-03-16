@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack",
-    "webpack": "npm run webpack"
+    "build": "npm run clean && webpack --optimize-minimize",
+    "webpack": "npm run webpack --optimize-minimize"
   },
   "author": "Christopher Ford",
   "license": "ISC",

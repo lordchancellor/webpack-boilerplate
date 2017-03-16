@@ -15,7 +15,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.js$/,
-				use: 'babel-loader',
+				use: ['babel-loader', 'eslint-loader'],
 				exclude: '/node_modules/'
 			},
 			{
@@ -35,6 +35,6 @@ module.exports = {
 			template: ('src/index.html')
 		}),
 		new ExtractTextPlugin('style.css'),
-		new webpack.optimize.UglifyJsPlugin({})
+		new webpack.optimize.UglifyJsPlugin({}),
 	]
 }

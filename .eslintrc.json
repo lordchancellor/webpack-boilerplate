@@ -1,5 +1,28 @@
 {
     "parserOptions": {
-        "ecmaVersion": 6
-	}
+        "ecmaVersion": 6,
+        "sourceType": "module"
+	},
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "no-invalid-regexp": "error",
+        "use-isnan": "error",
+        "default-case": "warn",
+        "eqeqeq": "warn",
+        "dot-location": "warn",
+        "no-alert": "error",
+        "no-eval": "error",
+        "no-implicit-globals": "warn",
+        "vars-on-top": "error",
+        "newline-after-var": "error",
+        "newline-before-return": "error",
+        "no-array-constructor": "error",
+        "semi": "error",
+        "spaced-comment": "error",
+        "no-var": "error",
+        "prefer-const": "error"
+    }
 }

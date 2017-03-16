@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && webpack --optimize-minimize",
-    "webpack": "npm run webpack --optimize-minimize"
+    "webpack": "npm run webpack --optimize-minimize",
+    "serve": "webpack-dev-server --open"
   },
   "author": "Christopher Ford",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "node-sass": "^4.5.0",
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.3",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
   }
 }

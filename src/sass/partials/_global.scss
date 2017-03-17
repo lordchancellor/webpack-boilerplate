@@ -6,26 +6,3 @@ body {
 body {
     font-family: 'Hevetica Neue', Helvetica, Arial, sans-serif;
 }
-
-// Buttons
-.btn-github {
-    background: $github;
-    border-color: $githubBorder;
-    color: $whiteText;
-
-    &:hover {
-        background: $githubShade;
-        color: $whiteText;
-    }
-}
-
-.btn-twitter {
-    background: $twitter;
-    border-color: $twitterBorder;
-    color: $whiteText;
-
-    &:hover {
-        background: $twitterShade;
-        color: $whiteText;
-    }
-}

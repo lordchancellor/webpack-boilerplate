@@ -23,6 +23,7 @@
         "semi": "error",
         "spaced-comment": "error",
         "no-var": "error",
-        "prefer-const": "error"
+        "prefer-const": "error",
+        "no-unused-vars": "warn"
     }
 }

@@ -9,7 +9,7 @@ Current Webpack processes:
 - Linting of JavaScript during build process with ESLint
 - HTML and JS for production deposited into a 'dist' folder
 - Sass compilation to CSS and auto-insertion of script tags
-- Webpack Development Server served to port 3500
+- Webpack Development Server served to port 3000
 
 Work out of the src folder and go live with the dist folder.
 

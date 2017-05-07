@@ -12,7 +12,7 @@
         "use-isnan": "error",
         "default-case": "warn",
         "eqeqeq": "warn",
-        "dot-location": "warn",
+        "dot-location": "off",
         "no-alert": "error",
         "no-eval": "error",
         "no-implicit-globals": "warn",

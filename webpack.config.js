@@ -23,18 +23,26 @@ module.exports = {
 				use: ExtractTextPlugin.extract({
 					use: ['css-loader', 'sass-loader']	
 				})
-			}
+			},
+			{
+				test: /\.(jpe?g|png|gif|svg)$/,
+				loader: 'file-loader',
+				options: {
+					name: '[name].[ext]',
+					outputPath: 'img/'
+				}
+			}		
 		]
 	},
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
-		port: 3500
+		port: 3000
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: ('src/index.html')
 		}),
 		new ExtractTextPlugin('style.css'),
-		new webpack.optimize.UglifyJsPlugin({}),
+		new webpack.optimize.UglifyJsPlugin({})
 	]
-}
+};
